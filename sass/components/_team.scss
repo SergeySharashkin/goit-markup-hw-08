@@ -1,34 +1,31 @@
 .team {
   background-color: $button-bgr-color;
-  padding-bottom: 94px;
-  padding-top: 94px;
-
-  margin: auto;
+  @extend %section-padding;
+  @extend %auto-margin;
   
 }
 .team__container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+  width: 480px;
+  @extend %contain-padding;
+  @extend %auto-margin;
 }
 .team__tittle {
   font-weight: bold;
-  font-size: 36px;
+  // font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
 
   margin-bottom: 50px;
   text-align: center;
 }
 .team__list {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  // display: flex;
+  @extend %list;
 }
 .team__form {
-  margin-right: 30px;
-  width: 270px;
+  // margin-right: 30px;
+  margin-bottom: 30px;
+  width: 450px;
   list-style: none;
 
   border: 1px solid $hero-text-color;
@@ -37,13 +34,13 @@
   box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
     0px 1px 3px 0px #0000001f;
   &:last-child {
-    margin-right: 0px;
+    margin-bottom: 0px;
   }
 }
 
 .team-card {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -56,6 +53,9 @@
   margin-top: 10px;
   color: $tittle-text-color;
   
+}
+.team__image {
+  width: 450px;
 }
 .team-card__member {
   font-weight: 500;
@@ -72,9 +72,8 @@
   align-items: center;
 }
 .social-list__item {
-  list-style: none;
+  @extend %list;
   margin-right: 10px;
-  padding: 0;
   &:last-child {
     margin-right: 0px;
   }
