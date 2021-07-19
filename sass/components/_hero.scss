@@ -1,0 +1,39 @@
+.hero {
+  background-color: $hero-bgr-color;
+  margin: auto;
+  max-width: 1600px;
+}
+.hero__container {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin: auto;
+  max-width: 1600px;
+}
+.hero__container--overlay {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: $hero-bgr-color;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.6),
+      rgba(47, 48, 58, 0.6)
+    ),
+    url('../images/img17.jpg'); 
+ 
+}
+.hero__tittle {
+  color: $hero-text-color;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  margin-top: 0;
+  margin-bottom: 30px;
+}
