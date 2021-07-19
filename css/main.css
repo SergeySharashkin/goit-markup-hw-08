@@ -42,12 +42,12 @@ img {
   clip: rect(0 0 0 0);
 }
 
-.page-header__container, .features__container, .team__container, .client__container, .footer-container {
+.hero__container, .page-header__container, .features__container, .team__container, .client__container, .footer-container {
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.page-header, .page-header__container, .features, .features__container, .team, .team__container, .client, .client__container, .footer, .footer-container {
+.hero, .hero__container, .hero__container--overlay, .page-header, .page-header__container, .features, .features__container, .team, .team__container, .client, .client__container, .footer, .footer-container {
   margin-right: auto;
   margin-left: auto;
 }
@@ -84,7 +84,6 @@ img {
 
 .hero {
   background-color: #2f303a;
-  margin: auto;
   max-width: 480px;
 }
 
@@ -92,13 +91,10 @@ img {
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
-  margin: auto;
 }
 
 .hero__container--overlay {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   background-color: #2f303a;
   background-size: cover;
   background-position: center;
@@ -544,7 +540,6 @@ img {
 
 .hero {
   background-color: #2f303a;
-  margin: auto;
   max-width: 480px;
 }
 
@@ -552,13 +547,10 @@ img {
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
-  margin: auto;
 }
 
 .hero__container--overlay {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   background-color: #2f303a;
   background-size: cover;
   background-position: center;
