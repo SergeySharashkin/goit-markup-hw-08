@@ -84,14 +84,48 @@ img {
 
 .hero {
   background-color: #2f303a;
-  max-width: 480px;
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 1200px;
+  }
 }
 
 .hero__container {
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
-  max-width: 480px;
+}
+
+@media screen and (min-width: 480px) {
+  .hero__container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    width: 1200px;
+  }
 }
 
 .hero__container--overlay {
@@ -540,14 +574,48 @@ img {
 
 .hero {
   background-color: #2f303a;
-  max-width: 480px;
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 1200px;
+  }
 }
 
 .hero__container {
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
-  max-width: 480px;
+}
+
+@media screen and (min-width: 480px) {
+  .hero__container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    width: 1200px;
+  }
 }
 
 .hero__container--overlay {
