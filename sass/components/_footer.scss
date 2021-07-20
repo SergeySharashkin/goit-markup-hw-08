@@ -13,7 +13,7 @@
   justify-content: center;
 
   // align-items: baseline;
-  width: 480px;
+  max-width: 480px;
   @extend %contain-padding;
   @extend %auto-margin;
 }
@@ -90,7 +90,7 @@
 }
 .footer-social__item {
   margin-right: 10px;
-  width: 44px;
+  max-width: 44px;
   height: 44px;
   &:last-child {
     margin-right: 0px;
@@ -143,7 +143,7 @@
   padding-left: 16px;
   border-radius: 4px;
   box-shadow: none;
-  width: 450px;
+  max-width: 450px;
   height: 50px;
   // width: 358px;
   // height: 50px;
@@ -160,7 +160,7 @@
   margin-bottom: 20px;
 }
 .footer-folov__button {
-  width: 200px;
+  max-width: 200px;
   height: 50px;
   background-color: $accent-color;
   margin-left: 12px;

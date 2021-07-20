@@ -5,7 +5,7 @@
   
 }
 .team__container {
-  width: 480px;
+  max-width: 480px;
   @extend %contain-padding;
   @extend %auto-margin;
 }
@@ -25,7 +25,7 @@
 .team__form {
   // margin-right: 30px;
   margin-bottom: 30px;
-  width: 450px;
+  max-width: 450px;
   list-style: none;
 
   border: 1px solid $hero-text-color;
@@ -55,7 +55,7 @@
   
 }
 .team__image {
-  width: 450px;
+  max-width: 450px;
 }
 .team-card__member {
   font-weight: 500;
@@ -80,7 +80,7 @@
 }
 
 .social-list__link {
-  width: 44px;
+  max-width: 44px;
   height: 44px;
   border-radius: 50%;
   display: flex;
