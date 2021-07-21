@@ -1,7 +1,11 @@
 .occupation {
-  padding-bottom: 94px;
-
-  margin: auto;
+  @extend %section-padding;
+  @extend %auto-margin;
+  
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
  
 }
 .occupation__container {

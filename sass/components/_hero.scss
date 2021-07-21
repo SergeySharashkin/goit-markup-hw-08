@@ -1,15 +1,16 @@
 .hero {
   background-color: $hero-bgr-color;
   @extend %auto-margin;
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  } 
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  } 
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  } 
+ 
+  // @media screen and (min-width: 480px) {
+  //   width: 480px;
+  // } 
+  // @media screen and (min-width: 768px) {
+  //   width: 768px;
+  // } 
+  // @media screen and (min-width: 1200px) {
+  //   width: 1200px;
+  // } 
 }
 .hero__container {
   text-align: center;
@@ -26,11 +27,14 @@
   width: 768px;
 } 
 @media screen and (min-width: 1200px) {
-  width: 1200px;
+  max-width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
 } 
 }
 .hero__container--overlay {
-  // width: 100%;
+  width: 100%;
   @extend %auto-margin;
 
   background-color: $hero-bgr-color;
