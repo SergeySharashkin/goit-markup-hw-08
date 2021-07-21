@@ -3,16 +3,18 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  min-width: 528px;
-  min-height: 581px;
+  background-color: $hero-text-color;
   border-radius: 4px;
   padding: 40px;
-
-  background-color: $hero-text-color;
+  min-width: 450px;
+  min-height: 609px;
+  @media screen and (min-width: 1200px) {
+  min-width: 528px;
+  min-height: 581px;
+  }
 }
 .modal__tittel {
-  display: inline-block;
+  // display: inline-block;
   width: 100%;
 
   font-size: 20px;
@@ -20,6 +22,10 @@
   line-height: 1.15px;
   letter-spacing: 0.03em;
   text-align: center;
+  @media screen and (min-width:1200px)
+  {
+    font-size: 20px;
+  }
 }
 
 .modal__form {
@@ -54,17 +60,25 @@
 }
 
 .modal__input {
-  width: 448px;
-  height: 40px;
+  min-width: 370px;
+
   margin: 0;
   padding-left: 42px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   font: inherit;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
   cursor: pointer;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width:1200px)
+{
+  min-width: 448px;
 }
+  
+}
+
 .modal__icon {
   padding: 0;
   margin: 0;
@@ -72,9 +86,9 @@
   top: 50%;
   transform: translateY(-50%);
   left: 0;
-  width: 18px;
-  height: 18px;
-  display: block;
+  // width: 18px;
+  // height: 18px;
+  display: inline-block;
   justify-content: center;
   align-items: center;
 
@@ -122,21 +136,25 @@
 }
 .modal__consent__label {
   display: inline-block;
-position: relative;
+  position: relative;
   cursor: pointer;
   margin-right: 4px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71px;
   letter-spacing: 0.03em;
 
   color: $tittle-text-color;
+  @media screen and (min-width:1200px)
+{
+  font-size: 14px;
+}
 }
 .modal__consent__icon {
   margin-right: 7px;
   display: inline-block;
   position: relative;
- top:4px;
+  top: 4px;
   width: 16px;
   height: 15px;
   border: 2px solid $primary-text-color;
@@ -153,10 +171,14 @@ position: relative;
   padding: 0;
   margin: 0;
 
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  @media screen and (min-width:1200px)
+  {
+    font-size: 14px;
+  }
 }
 .modal__consent__checkbox {
   appearance: none;
@@ -172,7 +194,7 @@ position: relative;
   left: -20%;
   margin: 0;
   padding: 0;
-display: inline-block;
+  display: inline-block;
   fill: inherit;
 }
 
@@ -186,7 +208,7 @@ display: inline-block;
 }
 
 .modal__textarea {
-  width: 448px;
+  min-width: 370px;
   height: 120px;
   resize: none;
   padding: 15px;
@@ -196,6 +218,10 @@ display: inline-block;
   border-radius: 4px;
   cursor: pointer;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width:1200px)
+  {
+    min-width: 448px;
+  }
 }
 
 .modal__submit {
@@ -234,6 +260,6 @@ display: inline-block;
 
   &:hover,
   &:focus {
-  fill: $accent-color;
-}
+    fill: $accent-color;
+  }
 }

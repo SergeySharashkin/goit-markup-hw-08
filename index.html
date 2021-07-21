@@ -18,44 +18,96 @@
   <body>
     <header class="page-header">
       <div class="page-header__container">
-        <nav class="main-nav">
-          <a href="./index.html" class="logo logo--header">
-            <span class="logo">Web</span>Studio
-          </a>
-          <!-- <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a
-                class="main-nav__link main-nav__link--current"
-                href="./index.html"
-                >Студия</a
-              >
+        <a href="./index.html" class="logo logo--header">
+          <span class="logo">Web</span>Studio
+        </a>
+        <div class="menu">
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a
+                  class="main-nav__link main-nav__link--current"
+                  href="./index.html"
+                  >Студия</a
+                >
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="./portfolio.html"> Портфолио</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="./"> Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contacts">
+            <li class="contacts__item">
+              <a class="contacts__link" href="mailto:info@devstudio.com">
+                <svg class="contacts__icon" width="16px" height="12px">
+                  <use href="./images/icons.svg#icon-post"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="./portfolio.html"> Портфолио</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="./"> Контакты</a>
+            <li class="contacts__item">
+              <a class="contacts__link" href="tel:+380961111111">
+                <svg class="contacts__icon" width="16px" height="12px">
+                  <use href="./images/icons.svg#icon-telephone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
             </li>
           </ul>
-        </nav>
-        <ul class="contacts">
-          <li class="contacts__item">
-            <a class="contacts__link" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon" width="16px" height="12px">
-                <use href="./images/icons.svg#icon-post"></use>
-              </svg>
-              info@devstudio.com
-            </a>
+        </div>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggle__image">
+            <use href="./images/icon-menu.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu__close js-close-menu">
+          <svg class="menu__icon" width="18px" height="18px">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="menu__nav-list">
+          <li class="menu__nav-item">
+            <a href="" class="menu__nav-link">Студия</a>
           </li>
-          <li class="contacts__item">
-            <a class="contacts__link" href="tel:+380961111111">
-              <svg class="contacts__icon" width="16px" height="12px">
-                <use href="./images/icons.svg#icon-telephone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
+          <li class="menu__nav-item">
+            <a href="" class="menu__nav-link">Портфолио</a>
           </li>
-        </ul> -->
+          <li class="menu__nav-item">
+            <a href="" class="menu__nav-link">Контакты</a>
+          </li>
+        </ul>
+        <ul class="menu__contacts-list">
+          <li class="menu__contacts-item">
+            <a href="" class="menu__contacts-link">+38 096 111 11 11</a>
+          </li>
+          <li class="menu__contacts-item">
+            <a href="" class="menu__contacts-link menu__contacts-link--email">info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="menu__social-list">
+          <li class="menu__social-item">
+            <a href="" class="menu__social-link">Instagram</a>
+          </li>
+          <li class="menu__social-item">
+            <a href="" class="menu__social-link">Twitter</a>
+          </li>
+          <li class="menu__social-item">
+            <a href="" class="menu__social-link">Facebook</a>
+          </li>
+          <li class="menu__social-item">
+            <a href="" class="menu__social-link">LinkedIn</a>
+          </li>
+        </ul>
       </div>
     </header>
     <main>
@@ -251,7 +303,8 @@
           <h2 class="team__tittle">Наша команда</h2>
           <ul class="team__list">
             <li class="team__form">
-              <img class="team__image"
+              <img
+                class="team__image"
                 src="./images/img4.jpg"
                 alt="Фото Игорь Демьяненко"
                 width=""
@@ -292,7 +345,8 @@
               </div>
             </li>
             <li class="team__form">
-              <img class="team__image"
+              <img
+                class="team__image"
                 src="./images/img5.jpg"
                 alt="Фото Ольга Репина"
                 width=""
@@ -333,7 +387,8 @@
               </div>
             </li>
             <li class="team__form">
-              <img class="team__image"
+              <img
+                class="team__image"
                 src="./images/img6.jpg"
                 alt="Фото Николай Тарасо"
                 width=""
@@ -374,7 +429,8 @@
               </div>
             </li>
             <li class="team__form">
-              <img class="team__image"
+              <img
+                class="team__image"
                 src="./images/img7.jpg"
                 alt="Фото Михаил Ермаков"
                 width=""
@@ -475,7 +531,9 @@
             <span class="logo">Web</span>Studio
           </a>
           <address class="footer-contacts__address">
-            <p class="footer-contacts__label">г. Киев, пр-т Леси Украинки, 26</p>
+            <p class="footer-contacts__label">
+              г. Киев, пр-т Леси Украинки, 26
+            </p>
             <ul class="footer-contacts__list">
               <li class="footer-contacts__item">
                 <a
@@ -549,5 +607,12 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
