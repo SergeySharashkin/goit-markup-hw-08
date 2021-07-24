@@ -171,6 +171,7 @@ img {
 
 .menu-container {
   width: 100%;
+  height: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -193,6 +194,7 @@ img {
     height: 100vh;
     padding: 40px 48px;
     background-color: #ffffff;
+    overflow-y: scroll;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
     -webkit-transition: -webkit-transform 250ms ease;
