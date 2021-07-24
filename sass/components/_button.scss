@@ -1,7 +1,7 @@
 .button {
     font-family: inherit;
     cursor: pointer;
-    display: inline-block;
+    display: block;
     border-radius: 4px;
     text-align: center;
     padding-bottom: 0;
@@ -11,6 +11,8 @@
     
   }
   .button--prim {
+    
+    @extend %auto-margin;
     color: $hero-text-color;
     font-weight: bold;
     font-weight: 700;
@@ -18,7 +20,7 @@
     line-height: 1.88;
     letter-spacing: 0.06em;
     background-color: $accent-color;
-    min-width: 200px;
+    
     border: 1px solid transparent;
   
     padding: 10px 32px;
@@ -29,8 +31,8 @@
     font-size: 16px;
     line-height: 1.62;
     background-color: $button-bgr-color;
-  
-    min-width: 83px;
+    
+    // min-width: 83px;
     border: 1px solid transparent;
     padding-top: 6px;
     padding-bottom: 6px;

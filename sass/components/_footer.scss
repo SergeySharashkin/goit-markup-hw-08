@@ -167,6 +167,7 @@ margin-bottom: 0px;
   width: 100%;
 @media screen and (min-width: 1200px) {
     text-align: left;
+    position: relative;
   }
 }
 .footer-folov__form {
@@ -211,7 +212,7 @@ margin-bottom: 0px;
   background-color: $accent-color;
   // margin-left: 12px;
   border-radius: 4px;
-
+@extend %auto-margin;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.88;
@@ -223,6 +224,13 @@ margin-bottom: 0px;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    top: 32%;
+    
+    right: -2%;
+  }
+  
 }
 .footer-folov__icon {
   fill: $hero-text-color;
