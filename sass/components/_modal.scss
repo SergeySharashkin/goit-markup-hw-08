@@ -1,21 +1,26 @@
 .modal {
+  
+  background-color: $hero-text-color;
+  border-radius: 4px;
+  padding: 40px;
+  max-width: 450px;
+  @extend %auto-margin;
+  position: relative;
+  
+  @media screen and (min-width: 1200px) {
+  
+  max-width: 528px;
+  max-height: 581px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: $hero-text-color;
-  border-radius: 4px;
-  padding: 40px;
-  min-width: 450px;
-  min-height: 609px;
-  @media screen and (min-width: 1200px) {
-  min-width: 528px;
-  min-height: 581px;
   }
 }
 .modal__tittel {
-  // display: inline-block;
-  width: 100%;
+  
+  // display: flex;
+  // width: 100%;
 
   font-size: 20px;
   font-weight: 700;
@@ -24,7 +29,7 @@
   text-align: center;
   @media screen and (min-width:1200px)
   {
-    font-size: 20px;
+    // font-size: 20px;
   }
 }
 

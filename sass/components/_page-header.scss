@@ -1,18 +1,19 @@
 .page-header {
     @extend %auto-margin;
     border-bottom: 1px solid rgba(236, 236, 236, 1);
-    
+    // position: relative;
 }
 .page-header__container {
    @extend %contain-padding;
+  
    padding-top: 16px;
    padding-bottom: 16px;
-  
+  width: 100%;
    max-width: 480px;
    display: flex;
    flex-wrap: wrap;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-around;
     
    @media screen and (min-width:768px) {
     max-width: 768px;

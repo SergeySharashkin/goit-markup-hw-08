@@ -9,9 +9,9 @@
 .features__container {
   @extend %contain-padding;
   @extend %auto-margin;
-  @media screen and (min-width: 480px) {
-    max-width: 480px;
-  } 
+  width: 100%;
+  max-width: 480px;
+  
   @media screen and (min-width: 768px) {
     max-width: 768px;
   }
@@ -21,10 +21,12 @@
 }
 .features__list {
   @extend %list;
-  margin: -15px;
+  
+  width: 100%;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
 }
 .features__button {
