@@ -49,7 +49,7 @@ img {
   padding-right: 15px;
 }
 
-.page-header, .hero, .hero__container, .features, .features__container, .modal, .occupation, .team, .team__container, .client, .client__container, .footer, .footer-container {
+.page-header, .page-header__container, .hero, .hero__container, .features, .features__container, .modal, .occupation, .team, .team__container, .client, .client__container, .footer, .footer-container {
   margin-right: auto;
   margin-left: auto;
 }
