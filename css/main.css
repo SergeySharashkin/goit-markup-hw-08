@@ -857,7 +857,7 @@ img {
 .modal__tittel {
   font-size: 20px;
   font-weight: 700;
-  line-height: 1.15px;
+  line-height: 1.15;
   letter-spacing: 0.03em;
   text-align: center;
 }
