@@ -27,7 +27,7 @@
 }
 .menu-container {
 width: 100%;
-height: auto;
+
 
   @media screen and (min-width:768px) {
     display: flex;
@@ -42,7 +42,7 @@ height: auto;
   height: 100vh;
   padding: 40px 48px;
   background-color: $hero-text-color;
-  overflow-y: scroll;
+  overflow: scroll;
 
   transform: translateX(100%);
   transition: transform 250ms ease;
