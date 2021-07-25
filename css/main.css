@@ -194,7 +194,6 @@ img {
     height: 100vh;
     padding: 40px 48px;
     background-color: #ffffff;
-    overflow: scroll;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
     -webkit-transition: -webkit-transform 250ms ease;
@@ -206,10 +205,6 @@ img {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
-}
-
-.menu {
-  overflow: scroll;
 }
 
 @media screen and (min-width: 768px) {
