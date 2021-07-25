@@ -787,26 +787,25 @@ img {
 
 .features__form {
   max-width: 100%;
+  text-align: center;
+}
+
+.features__form:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
   .features__form {
-    width: calc((100% - 2 * 30px)/2);
+    width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
+    text-align: left;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .features__form {
-    width: calc((100% - 4 * 30px)/4);
+    width: calc((100% - 4 * 30px) / 4);
     margin: 15px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .features__form:not(:last-child) {
-    margin-bottom: 30px;
-    text-align: center;
   }
 }
 
