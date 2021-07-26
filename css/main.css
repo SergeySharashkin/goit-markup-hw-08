@@ -1705,9 +1705,9 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   text-align: center;
   width: 100%;
 }
@@ -1752,9 +1752,6 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1793,7 +1790,6 @@ img {
   .footer-folov__input {
     width: 358px;
     margin-bottom: 0;
-    margin-bottom: 20px;
     margin-right: 12px;
   }
 }
@@ -1818,14 +1814,6 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
-}
-
-@media screen and (min-width: 1200px) {
-  .footer-folov__button {
-    position: absolute;
-    top: 32%;
-    right: -2%;
-  }
 }
 
 .footer-folov__icon {
