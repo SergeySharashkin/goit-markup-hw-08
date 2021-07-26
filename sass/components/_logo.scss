@@ -13,6 +13,8 @@
     margin: 0;
     @media screen and(min-width:1200px) {
       font-size: 26px;
+     text-align: left;
+    //  justify-content: left;
     }
           
     &.logo--header {
@@ -22,6 +24,7 @@
     }
     &.logo--footer {
       color: $hero-text-color;
+      
     }
   }
   

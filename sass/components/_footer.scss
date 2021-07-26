@@ -38,6 +38,10 @@ width: 100%;
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
     margin-right: 70px;
+    text-align: left;
+    
+    align-items: flex-start;
+    // margin-left: 0;
   }
 }
 
@@ -91,7 +95,7 @@ width: 100%;
     width: 50%;
   }
   @media screen and (min-width: 1200px) {
-    margin-right: 93px;
+    // margin-right: auto;
     justify-content: left;
 text-align: left;
 margin-bottom: 0px;
@@ -146,16 +150,17 @@ margin-bottom: 0px;
 .footer-folov {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   text-align: center;
-  width: 100%;
-  @media screen and (min-width: 768px) {
+  
+  // width: 100%;
+  @media screen and (min-width: 768px) and (max-width:1199px) {
     width: 450px;
   }
   @media screen and (min-width: 1200px) {
-    width: 570px;
+    // flex-wrap: wrap;
     flex-direction: row;
-   
+    align-items: flex-end;
+  margin-left: auto;
   }
 }
 .footer-folov__label {
@@ -167,21 +172,23 @@ margin-bottom: 0px;
   width: 100%;
 @media screen and (min-width: 1200px) {
     text-align: left;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    // position: relative;
   }
 }
-.footer-folov__form {
-  display: flex;
-  // flex-wrap: wrap;
-  flex-direction: column;
+// .footer-folov__form {
+//   display: flex;
+//   // flex-wrap: wrap;
+//   flex-direction: column;
   
-  justify-content: center;
-  @media screen and (min-width: 1200px) {
-    // width: 358px;
-    flex-direction: row;
+//   justify-content: center;
+//   @media screen and (min-width: 1200px) {
+//     // width: 358px;
+//     flex-direction: row;
     
-  }
-}
+//   }
+// }
 .footer-folov__input {
   background-color: rgba(33, 150, 243, 0);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -212,24 +219,20 @@ margin-bottom: 0px;
   background-color: $accent-color;
   // margin-left: 12px;
   border-radius: 4px;
-@extend %auto-margin;
+// @extend %auto-margin;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
   text-align: center;
   color: $hero-text-color;
-
+max-width: 200px;
+max-height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  @media screen and (min-width: 1200px) {
-    // position: absolute;
-    // top: 32%;
-    
-    // right: -2%;
-  }
+ 
   
 }
 .footer-folov__icon {
