@@ -1,17 +1,20 @@
 .work {
-  display: flex;
+  
   flex-wrap: wrap;
   @extend %auto-margin;
   @extend %list;
   @media screen and (min-width:768px) {
      margin: -15px;
+     display: flex;
   }
  
 
 }
 .work__form {
   width: 100%;
-  height: auto;
+  // max-width: 450px;
+  // @extend %auto-margin;
+  // height: auto;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:not(:last-child) {
@@ -40,14 +43,23 @@
 }
 .work__link {
   text-decoration: none;
+  margin: 0;
   color: $primary-text-color;
+  // width: 100%;
 }
 
 .work__box {
   position: relative;
   overflow: hidden;
+  // width: 100%;
 }
-
+.work__image {
+  width: 100%;
+  // max-width: 450px;
+  height: auto;
+  // margin: 0;
+  // position: absolute;
+}
 .work__overlay {
   position: absolute;
   bottom: 0;
