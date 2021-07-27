@@ -73,7 +73,6 @@ img {
   padding-top: 16px;
   padding-bottom: 16px;
   width: 100%;
-  max-width: 480px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -822,7 +821,8 @@ img {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
-  color: var(--tittle-text-color);
+  color: #757575;
+  text-align: left;
 }
 
 .backdrop {

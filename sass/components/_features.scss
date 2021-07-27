@@ -72,7 +72,7 @@
   text-transform: uppercase;
   // max-width: 270 px;
 
-  // text-align: center;
+  
   margin-bottom: 10px;
 }
 
@@ -80,7 +80,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
-  color: var(--tittle-text-color);
-
+  color: $tittle-text-color;
+  text-align: left;
   // text-align: center;
 }
