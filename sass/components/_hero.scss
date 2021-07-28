@@ -2,12 +2,7 @@
   background-color: $hero-bgr-color;
   @extend %auto-margin;
  
-  // @media screen and (min-width: 480px) {
-  //   width: 480px;
-  // } 
-  // @media screen and (min-width: 768px) {
-  //   width: 768px;
-  // } 
+  
   @media screen and (min-width: 1200px) {
     max-width: 1600px;
   } 
@@ -21,13 +16,7 @@
   // padding-bottom: 200px;
   @extend %auto-margin;
   @extend %contain-padding;
-//  @media screen and (min-width: 480px) {
-   
-//   max-width: 480px;
-//  } 
- @media screen and (min-width: 768px) {
-  // max-width: 768px;
-} 
+
 @media screen and (min-width: 1200px) {
   max-width: 1600px;
   padding-top: 200px;
@@ -46,7 +35,7 @@
     rgba(47, 48, 58, 0.6),
     rgba(47, 48, 58, 0.6)
   ),
-  url('../images/hero-mobile.png'); 
+  url('../images/img17-mob-1x.jpg'); 
   @media screen and (min-device-pixel-ratio:2),
   screen and (min-resolution:192dpi),
   screen and (min-resolution: 2dppx)
@@ -56,7 +45,7 @@
      rgba(47, 48, 58, 0.6),
      rgba(47, 48, 58, 0.6)
    ),
-   url('../images/hero-mobile@2x.png'); 
+   url('../images/img17-mob-2x.jpg'); 
   }
   // @extend %auto-margin;
 @media screen and (min-width:768px) {
@@ -66,7 +55,7 @@
     rgba(47, 48, 58, 0.6),
     rgba(47, 48, 58, 0.6)
   ),
-  url('../images/hero-tab.png'); 
+  url('../images/img17-tab-1x.jpg'); 
   @media screen and (min-device-pixel-ratio:2),
  screen and (min-resolution:192dpi),
  screen and (min-resolution: 2dppx)
@@ -76,7 +65,7 @@
     rgba(47, 48, 58, 0.6),
     rgba(47, 48, 58, 0.6)
   ),
-  url('../images/hero-tab@2x.png'); 
+  url('../images/img17-tab-2x.jpg'); 
  }
 }
 @media screen and (min-width:1200px) {
@@ -86,7 +75,7 @@
     rgba(47, 48, 58, 0.6),
     rgba(47, 48, 58, 0.6)
   ),
-  url('../images/hero-desc.png'); 
+  url('../images/img17-desc-1x.jpg'); 
   @media screen and (min-width:1200px), screen and (min-device-pixel-ratio:2),
  screen and (min-resolution:192dpi),
  screen and (min-resolution: 2dppx)
@@ -96,7 +85,7 @@
     rgba(47, 48, 58, 0.6),
     rgba(47, 48, 58, 0.6)
   ),
-  url('../images/hero-desc@2x.png'); 
+  url('../images/img17-desc-2x.jpg'); 
  }
 }
  

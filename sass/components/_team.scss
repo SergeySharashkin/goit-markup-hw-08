@@ -47,12 +47,7 @@
 }
 .team__form {
     width: 100%;
-  // max-width: 270px;
-  @extend %list;
-  
-text-align: center;
-// margin: 0;
-// padding: 0;
+    text-align: center;
 
   border: 1px solid $hero-text-color;
   border-radius: 0 0 4px 4px;
@@ -72,8 +67,6 @@ text-align: center;
     
     @media screen and (max-width: 767px) {
       margin-bottom: 30px;
-    
-    
     }
   }
 }
@@ -99,6 +92,7 @@ text-align: center;
 .team__image {
   // max-width: 270px;
   width: 100%;
+  height: auto;
  
   
 }

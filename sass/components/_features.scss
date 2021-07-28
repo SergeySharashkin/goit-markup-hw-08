@@ -21,7 +21,6 @@
 }
 .features__list {
   @extend %list;
-
   width: 100%;
   @media screen and (min-width: 768px) {
     display: flex;
