@@ -15,6 +15,10 @@
   @media screen and (min-width: 1200px) {
     z-index: 2;
   }
+  @media screen and (max-width:479px)
+  {
+    padding: 5px 15px;
+  }
 }
 .backdrop--is-hidden {
   opacity: 0;

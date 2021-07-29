@@ -887,6 +887,12 @@ img {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .backdrop {
+    padding: 5px 15px;
+  }
+}
+
 .backdrop--is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -898,6 +904,12 @@ img {
   padding: 40px;
   max-width: 450px;
   position: relative;
+}
+
+@media screen and (max-width: 479px) {
+  .modal {
+    padding: 20px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -920,8 +932,20 @@ img {
   text-align: center;
 }
 
+@media screen and (max-width: 479px) {
+  .modal__tittel {
+    font-size: 10px;
+  }
+}
+
 .modal__fild {
   margin-top: 12px;
+}
+
+@media screen and (max-width: 479px) {
+  .modal__fild {
+    margin-top: 8px;
+  }
 }
 
 .modal__label {
@@ -962,6 +986,13 @@ img {
 @media screen and (min-width: 1200px) {
   .modal__input {
     min-width: 448px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .modal__input {
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 
@@ -1043,6 +1074,12 @@ img {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .modal__consent__label {
+    font-size: 9px;
+  }
+}
+
 .modal__consent__icon {
   margin-right: 7px;
   display: inline-block;
@@ -1071,6 +1108,12 @@ img {
 @media screen and (min-width: 1200px) {
   .modal__consent__link {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .modal__consent__link {
+    font-size: 9px;
   }
 }
 
@@ -1122,6 +1165,12 @@ img {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .modal__textarea {
+    height: 80px;
+  }
+}
+
 .modal__submit {
   width: 200px;
   height: 50px;
@@ -1144,6 +1193,14 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (max-width: 479px) {
+  .modal__submit {
+    width: 150px;
+    height: 35px;
+    margin-top: 15px;
+  }
 }
 
 .modal__button {
@@ -1171,6 +1228,13 @@ img {
 
 .modal__button:hover, .modal__button:focus {
   fill: #2196f3;
+}
+
+@media screen and (max-width: 479px) {
+  .modal__button {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .occupation {
@@ -1976,7 +2040,15 @@ img {
 .work__link {
   text-decoration: none;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
   color: #212121;
+  height: 100%;
 }
 
 .work__box {
@@ -2028,6 +2100,9 @@ img {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .work__type {
